@@ -1,15 +1,19 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.package">
 
-    <genericsetup:registerProfile
-        name="default"
-        title="collective.package"
-        directory="profiles/default"
-        description="Sample package"
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-    />
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.package"
+      directory="profiles/default"
+      description="Sample package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
 
 </configure>
