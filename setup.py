@@ -28,7 +28,7 @@ setup(name='collective.package',
           'setuptools',
       ],
       entry_points="""
-      [z3c.autoinclude]
+      [z3c.autoinclude.plugin]
       target = plone
       """,
       )
