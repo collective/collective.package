@@ -1,6 +1,6 @@
 Introduction
 ============
 
-This is an example product that demonstrates:
+This is a sample product that demonstrates:
 
     - New-style quickinstaller functionality
