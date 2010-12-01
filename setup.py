@@ -8,9 +8,8 @@ def read(input):
 
 setup(name='collective.package',
       version=version,
-      description="A sample package to demonstrate Plone add-on development"
-      long_description=(read('README.txt') + 
-                        read('docs/HISTORY.txt')),
+      description="A sample package to demonstrate Plone add-on development",
+      long_description=read('README.txt') + read('docs/HISTORY.txt'),
       classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
