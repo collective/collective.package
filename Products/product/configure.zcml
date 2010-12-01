@@ -8,7 +8,7 @@
         name="default"
         title="Products.product"
         directory="profiles/default"
-        description="Example product"
+        description="Sample product"
         provides="Products.GenericSetup.interfaces.EXTENSION"
     />
 
