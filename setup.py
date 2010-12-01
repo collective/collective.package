@@ -3,9 +3,9 @@ import os
 
 version = '0.1'
 
-setup(name='Products.product',
+setup(name='collective.package',
       version=version,
-      description="An example product to demonstrate new-style QI functionality",
+      description="A sample package to demonstrate Plone add-on development"
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -17,10 +17,10 @@ setup(name='Products.product',
       keywords='',
       author='Alex Clark',
       author_email='aclark@aclark.net',
-      url='http://svn.plone.org/svn/collective/Products.product/',
+      url='http://svn.plone.org/svn/collective/collective.package/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['Products'],
+      namespace_packages=['collective'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
