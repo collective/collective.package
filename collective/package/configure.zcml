@@ -2,13 +2,13 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="Products.product">
+    i18n_domain="collective.package">
 
     <genericsetup:registerProfile
         name="default"
-        title="Products.product"
+        title="collective.package"
         directory="profiles/default"
-        description="Sample product"
+        description="Sample package"
         provides="Products.GenericSetup.interfaces.EXTENSION"
     />
 
