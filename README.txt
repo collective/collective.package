@@ -3,17 +3,18 @@
 Introduction
 ============
 
-This is a sample add-on package for Plone developers.
+``collective.package`` is a sample add-on package for Plone developers.
 
 Motivation
 ----------
 
-Boilerplate from template generators like ZopeSkel is nice, but not quite as
-nice as real (but generic) examples.
+Boilerplate from template generators like ``ZopeSkel`` is nice, but not quite as
+nice as real, but generic, examples.
 
-In the same way the collective developer's manual aims to document every
-single occurence along the way to Plone coding zen, collective.package aims to
-code it then release it as an installable add-on.
+In the same way the collective developer's manual
+(http://svn.plone.org/svn/collective/collective.developermanual/trunk/) aims to
+document every single occurence along the way to Plone coding zen,
+``collective.package`` aims to code it then release it as an installable add-on.
 
 Installation
 ------------
@@ -21,7 +22,6 @@ Installation
 You may install this add-on via Buildout, like so::
 
     [buildout]
-    extensions = buildout.bootstrap
     extends = http://dist.plone.org/release/4.0.2/versions.cfg
     versions = versions
     parts = plone
@@ -30,7 +30,6 @@ You may install this add-on via Buildout, like so::
     recipe = plone.recipe.zope2instance
     user = admin:admin
     eggs = 
-        Pillow
         Plone
         collective.package
 
