@@ -2,6 +2,8 @@ import install
 
 install.register_package_plugin()
 
+
 def initialize(context):
-    """Initializer called when used as a Zope 2 product."""
+    """Zope 2 product initialization
+    """
     install.register_package_plugin_class(context)

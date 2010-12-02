@@ -5,20 +5,20 @@ from Products.PluggableAuthService import registerMultiPlugin
 import plugin
 
 manage_add_package_form = PageTemplateFile('browser/add_plugin',
-                            globals(), __name__='manage_add_package_form' )
+                            globals(), __name__='manage_add_package_form')
 
 
-def manage_add_package_helper( dispatcher, id, title=None, REQUEST=None ):
-    """Add an package Helper to the PluggableAuthentication Service."""
+def manage_add_package_helper(dispatcher, id, title=None, REQUEST=None):
+    """Add a sample plugin to the PluggableAuthentication Service."""
 
-    sp = plugin.PackageHelper( id, title )
-    dispatcher._setObject( sp.getId(), sp )
+    sp = plugin.PackageHelper(id, title)
+    dispatcher._setObject(sp.getId(), sp)
 
     if REQUEST is not None:
-        REQUEST['RESPONSE'].redirect( '%s/manage_workspace'
-                                      '?manage_tabs_message='
-                                      'packageHelper+added.'
-                                      % dispatcher.absolute_url() )
+        REQUEST['RESPONSE'].redirect('%s/manage_workspace'
+                                     '?manage_tabs_message='
+                                     'packageHelper+added.'
+                                      % dispatcher.absolute_url())
 
 
 def register_package_plugin():
@@ -31,9 +31,9 @@ def register_package_plugin():
 
 def register_package_plugin_class(context):
     context.registerClass(plugin.PackageHelper,
-                          permission = manage_users,
-                          constructors = (manage_add_package_form,
+                          permission=manage_users,
+                          constructors=(manage_add_package_form,
                                           manage_add_package_helper),
-                          visibility = None,
+                          visibility=None,
                           icon='browser/icon.gif'
                          )

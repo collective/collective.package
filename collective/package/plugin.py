@@ -9,18 +9,18 @@ from Products.PluggableAuthService.utils import classImplements
 
 import interface
 
-class PackagePlugin(BasePlugin):
-    """Multi-plugin
-    """
 
-    meta_type = 'package Plugin'
+class PackagePlugin(BasePlugin):
+    """Sample plugin"""
+
+    meta_type = 'Sample plugin'
     security = ClassSecurityInfo()
 
-    def __init__( self, id, title=None ):
-        self._setId( id )
+    def __init__(self, id, title=None):
+        self._setId(id)
         self.title = title
 
 
 classImplements(PackagePlugin, interface.IPackagePlugin)
 
-InitializeClass( PackagePlugin )
+InitializeClass(PackagePlugin)
