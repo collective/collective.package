@@ -8,12 +8,9 @@ from Products.PluggableAuthService.plugins.BasePlugin import BasePlugin
 from Products.PluggableAuthService.utils import classImplements
 
 import interface
-import plugins
 
-class PackageHelper( # -*- implemented plugins -*-
-                               ):
+class PackageHelper(BasePlugin):
     """Multi-plugin
-
     """
 
     meta_type = 'package Helper'
@@ -22,7 +19,6 @@ class PackageHelper( # -*- implemented plugins -*-
     def __init__( self, id, title=None ):
         self._setId( id )
         self.title = title
-
 
 
 classImplements(PackageHelper, interface.IPackageHelper)
