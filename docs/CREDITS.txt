@@ -1,0 +1,1 @@
+Battery icon in sample plugin courtesy of http://tango.freedesktop.org
