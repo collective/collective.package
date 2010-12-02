@@ -23,7 +23,7 @@ IUserFactoryPlugin = plugins.IUserFactoryPlugin
 IValidationPlugin = plugins.IValidationPlugin
 
 
-class IPackageHelper(IAnonymousUserFactoryPlugin, IAuthenticationPlugin,
+class IPackagePlugin(IAnonymousUserFactoryPlugin, IAuthenticationPlugin,
     IChallengePlugin, IChallengeProtocolChooser, ICredentialsResetPlugin,
     ICredentialsUpdatePlugin, IExtractionPlugin, IGroupEnumerationPlugin,
     IGroupsPlugin, ILoginPasswordExtractionPlugin,
@@ -32,4 +32,4 @@ class IPackageHelper(IAnonymousUserFactoryPlugin, IAuthenticationPlugin,
     IRoleEnumerationPlugin, IRolesPlugin,
     IUpdatePlugin, IUserAdderPlugin,
     IUserEnumerationPlugin, IUserFactoryPlugin, IValidationPlugin):
-    """interface for PackageHelper."""
+    """interface for PackagePlugin."""

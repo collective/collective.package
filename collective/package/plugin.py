@@ -1,4 +1,4 @@
-"""Class: PackageHelper
+"""Class: PackagePlugin
 """
 
 from AccessControl.SecurityInfo import ClassSecurityInfo
@@ -9,11 +9,11 @@ from Products.PluggableAuthService.utils import classImplements
 
 import interface
 
-class PackageHelper(BasePlugin):
+class PackagePlugin(BasePlugin):
     """Multi-plugin
     """
 
-    meta_type = 'package Helper'
+    meta_type = 'package Plugin'
     security = ClassSecurityInfo()
 
     def __init__( self, id, title=None ):
@@ -21,6 +21,6 @@ class PackageHelper(BasePlugin):
         self.title = title
 
 
-classImplements(PackageHelper, interface.IPackageHelper)
+classImplements(PackagePlugin, interface.IPackagePlugin)
 
-InitializeClass( PackageHelper )
+InitializeClass( PackagePlugin )
