@@ -11,7 +11,7 @@ manage_add_package_form = PageTemplateFile('browser/add_plugin',
 def manage_add_package_helper(dispatcher, id, title=None, REQUEST=None):
     """Add a sample plugin to the PluggableAuthentication Service."""
 
-    sp = plugin.PackageHelper(id, title)
+    sp = plugin.PackagePlugin(id, title)
     dispatcher._setObject(sp.getId(), sp)
 
     if REQUEST is not None:
@@ -23,14 +23,14 @@ def manage_add_package_helper(dispatcher, id, title=None, REQUEST=None):
 
 def register_package_plugin():
     try:
-        registerMultiPlugin(plugin.PackageHelper.meta_type)
+        registerMultiPlugin(plugin.PackagePlugin.meta_type)
     except RuntimeError:
         # make refresh users happy
         pass
 
 
 def register_package_plugin_class(context):
-    context.registerClass(plugin.PackageHelper,
+    context.registerClass(plugin.PackagePlugin,
                           permission=manage_users,
                           constructors=(manage_add_package_form,
                                           manage_add_package_helper),
