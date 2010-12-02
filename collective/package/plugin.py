@@ -13,7 +13,7 @@ import interface
 class PackagePlugin(BasePlugin):
     """Sample plugin"""
 
-    meta_type = 'Sample plugin'
+    meta_type = 'Sample Plugin'
     security = ClassSecurityInfo()
 
     def __init__(self, id, title=None):
