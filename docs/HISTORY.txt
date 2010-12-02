@@ -1,8 +1,13 @@
 Changelog
 =========
 
+0.2 (12/01/2010)
+----------------
+
+* Add PAS example
+* Rename Products.product to collective.package
+
 0.1 - Unreleased
 ----------------
 
 * Initial release
-
