@@ -8,8 +8,8 @@ Introduction
 Motivation
 ----------
 
-Boilerplate from template generators like ``ZopeSkel`` is nice, but not quite as
-nice as real, but generic, examples.
+Boilerplate from template generators like ``ZopeSkel`` is nice; but not quite as
+nice as real, but still generic, examples.
 
 In the same way the collective developer's manual
 (http://svn.plone.org/svn/collective/collective.developermanual/trunk/) aims to
