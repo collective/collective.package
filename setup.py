@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.2'
+version = '0.3'
 
 def read(input):
     return open(input, 'rw').read()
 
 setup(name='collective.package',
       version=version,
-      description="A sample package to demonstrate Plone add-on development",
+      description="Sample package to demonstrate development of add-ons for the Plone CMS",
       long_description=read('README.txt') + read('docs/HISTORY.txt'),
       classifiers=[
         "Framework :: Plone",
