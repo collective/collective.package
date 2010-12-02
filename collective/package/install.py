@@ -35,5 +35,5 @@ def register_package_plugin_class(context):
                           constructors=(manage_add_package_form,
                                           manage_add_package_helper),
                           visibility=None,
-                          icon='browser/icon.gif'
+                          icon='browser/battery.png'
                          )
