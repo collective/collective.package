@@ -24,7 +24,7 @@ setup(
     ],
     long_description=(
         open('README.rst').read() +
-        open(os.path.join('docs', 'HISTORY.txt'))
+        open(os.path.join('docs', 'HISTORY.txt')).read()
     ),
     keywords='plone example package',
     license='ZPL',
